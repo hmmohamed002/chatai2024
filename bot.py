@@ -1,29 +1,28 @@
 from telegram import Update
-from telegram.ext import Application, CommandHandler, MessageHandler, filters, CallbackContext
-import requests
+from telegram.ext import Updater, CommandHandler, CallbackContext
 
-# وظيفة للرد على الرسائل باستخدام API خارجي
-async def respond(update: Update, context: CallbackContext):
-    user_message = update.message.text
-    # الاتصال بواجهة برمجة التطبيقات (API) للحصول على رد
-    response = requests.get(f"https://api.example.com/ai?query={user_message}")
-    bot_response = response.json().get('response', 'Sorry, I did not understand that.')
-    await update.message.reply_text(bot_response)
+# استبدل بـ توكن البوت الخاص بك
+TOKEN = '7600581966:AAHJMKucIxZjPXVQnjb1HEabj6A0jHyomo8'
 
-# وظيفة لبدء البوت
-async def start(update: Update, context: CallbackContext):
-    await update.message.reply_text('Hello! I am your AI bot. How can I assist you?')
+def start(update: Update, context: CallbackContext) -> None:
+    update.message.reply_text('مرحبًا! أنا بوت ذكاء اصطناعي. كيف يمكنني مساعدتك اليوم؟')
 
-if __name__ == '__main__':
-    # ضع توكن بوت تلغرام الخاص بك هنا
-    TOKEN = "7600581966:AAHJMKucIxZjPXVQnjb1HEabj6A0jHyomo8"
-    
-    # إنشاء تطبيق
-    application = Application.builder().token(TOKEN).build()
+def help_command(update: Update, context: CallbackContext) -> None:
+    update.message.reply_text('يمكنني مساعدتك في العديد من الأمور! فقط اسألني.')
 
-    # إضافة معالجات الأوامر
-    application.add_handler(CommandHandler("start", start))
-    application.add_handler(MessageHandler(filters.TEXT & ~filters.COMMAND, respond))
+def main() -> None:
+    updater = Updater(TOKEN)
+
+    # الحصول على الموزع
+    dispatcher = updater.dispatcher
+
+    # إضافة أوامر البوت
+    dispatcher.add_handler(CommandHandler("start", start))
+    dispatcher.add_handler(CommandHandler("help", help_command))
 
     # بدء البوت
-    application.run_polling()
+    updater.start_polling()
+    updater.idle()
+
+if __name__ == '__main__':
+    main()
