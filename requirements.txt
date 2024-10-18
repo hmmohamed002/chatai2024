@@ -1,3 +1,4 @@
+requests
+httpx
 python-telegram-bot
-huggingface_hub
-onnx
+onnxruntime
