@@ -1,0 +1,5 @@
+python-telegram-bot==20.0  # لإدارة بوت تلغرام
+requests==2.31.0           # لإرسال طلبات HTTP مثل طلبات API
+torch                      # مكتبة PyTorch للتعلم العميق (إذا كنت تستخدمها)
+tensorflow                 # مكتبة TensorFlow للتعلم العميق (إذا كنت تستخدمها)
+onnxruntime                # تشغيل النماذج باستخدام ONNX
