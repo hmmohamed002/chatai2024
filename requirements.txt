@@ -1,7 +1,4 @@
 # مكتبات المشروع
-requests==2.31.0           # لإرسال طلبات HTTP
-httpx                      # مكتبة HTTP
+requests==2.31.0          # لإرسال طلبات HTTP
+httpx                     # مكتبة HTTP
 python-telegram-bot==20.0  # لإدارة بوت تلغرام
-onnxruntime                # تشغيل النماذج باستخدام ONNX
-torch                      # مكتبة PyTorch للتعلم العميق
-tensorflow                 # مكتبة TensorFlow للتعلم العميق
