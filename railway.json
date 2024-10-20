@@ -1,0 +1,19 @@
+{
+  "build": {
+    "env": {
+      "TOKEN": "7600581966:AAHJMKucIxZjPXVQnjb1HEabj6A0jHy",  
+      "API_KEY": "83fae0405eabb4ee8",  
+      "HOSTING_KEY": "github_pat_11BMF25BY0TKC5tn944PRl_u2"
+    }
+  },
+  "start": "python arabert_bot.py"  // استبدل this باسم ملفك الرئيسي
+  "services": {
+    "worker": {
+      "env": {
+        "TOKEN": "7600581966:AAHJMKucIxZjPXVQnjb1HEabj6A0jHy",  
+        "API_KEY": "83fae0405eabb4ee8",  
+        "HOSTING_KEY": "github_pat_11BMF25BY0TKC5tn944PRl_u2"
+      }
+    }
+  }
+}
