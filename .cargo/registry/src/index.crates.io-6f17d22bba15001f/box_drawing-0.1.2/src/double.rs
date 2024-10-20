@@ -1,0 +1,11 @@
+pub const HORIZONTAL:&str="═";
+pub const VERTICAL:&str="║";
+pub const DOWN_RIGHT:&str="╔";
+pub const DOWN_LEFT:&str="╗";
+pub const UP_RIGHT:&str="╚";
+pub const UP_LEFT:&str="╝";
+pub const VERTICAL_RIGHT:&str="╠";
+pub const VERTICAL_LEFT:&str="╣";
+pub const DOWN_HORIZONTAL:&str="╦";
+pub const UP_HORIZONTAL:&str="╩";
+pub const VERTICAL_HORIZONTAL:&str="╬";

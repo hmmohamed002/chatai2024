@@ -1,0 +1,15 @@
+{
+  "projects": {
+    "/data/data/com.termux/files/home": {
+      "projectPath": "/data/data/com.termux/files/home",
+      "name": "observant-wholeness",
+      "project": "7c1f5445-7253-458e-b609-4d6855f8653e",
+      "environment": "4eab60f3-23c4-413e-b96c-c2c600b987e7",
+      "environmentName": "production",
+      "service": "fac20a26-e4db-4b62-a68d-8636dbff2827"
+    }
+  },
+  "user": {
+    "token": "rw_Fe26.2**62562dcfa3910be49508ab3472b45f802b7158596475558affd5d24d848b4c59*0dVEf6o2NX0jPLM3QHvPTg*sx--T6_Sh4je4iTaxbrOrq10UY48OmBWplPIOTjNkOfajM-mfcDb1GMWiYVOEahmQHL03nYVa8Mmn-yP7sOfsg*1731981705301*c6c04d9e3037b6410f569ccafcc86ecd18311158cba24031602cf3d395529a68*wag44-p6tRrEJr-3DuCHkLrIJB-h1nIN-JZLTRzbka4"
+  }
+}

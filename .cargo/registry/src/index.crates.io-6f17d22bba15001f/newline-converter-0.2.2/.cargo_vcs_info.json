@@ -1,0 +1,6 @@
+{
+  "git": {
+    "sha1": "d483abc9c2575232e1ae61ec144fca778a3d918b"
+  },
+  "path_in_vcs": "crates/newline-converter"
+}

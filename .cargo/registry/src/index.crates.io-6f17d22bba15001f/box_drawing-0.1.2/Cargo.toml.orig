@@ -1,0 +1,14 @@
+[package]
+name = "box_drawing"
+version = "0.1.2"
+authors = ["Agent Alfa <chronos.alfa@atlas.cz>"]
+license = "MIT"
+description = "A very simple library containing constants for UTF-8 box drawing."
+repository = "https://gitlab.com/chronos.alfa/box_drawing.git"
+keywords = ["utf8","drawing","box","ascii","tui"]
+categories = ["command-line-interface","command-line-utilities", "gui"]
+
+[dependencies]
+
+[badges]
+gitlab = {repository = "chronos.alfa/box_drawing"}

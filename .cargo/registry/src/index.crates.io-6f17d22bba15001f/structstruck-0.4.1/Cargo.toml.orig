@@ -1,0 +1,23 @@
+[package]
+name = "structstruck"
+authors = ["Julius Michaelis <gitter@liftm.de>"]
+license = "MIT"
+categories = ["rust-patterns", "development-tools::procedural-macro-helpers"]
+keywords = ["proc_macro", "nested", "struct"]
+version = "0.4.1"
+edition = "2021"
+description = "Nested struct and enum definitions"
+repository = "https://github.com/jcaesar/structstruck"
+
+[lib]
+proc-macro = true
+
+[dependencies]
+heck = "0.4.1"
+proc-macro2 = "1.0.51"
+quote = "1.0.23"
+venial = "0.5.0"
+
+[dev-dependencies]
+prettyplease = "0.1.23"
+syn = "1.0.107"
