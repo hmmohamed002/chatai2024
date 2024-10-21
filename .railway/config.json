@@ -7,6 +7,14 @@
       "environment": "4eab60f3-23c4-413e-b96c-c2c600b987e7",
       "environmentName": "production",
       "service": "fac20a26-e4db-4b62-a68d-8636dbff2827"
+    },
+    "/data/data/com.termux/files/home/observant-wholeness": {
+      "projectPath": "/data/data/com.termux/files/home/observant-wholeness",
+      "name": "observant-wholeness",
+      "project": "7c1f5445-7253-458e-b609-4d6855f8653e",
+      "environment": "4eab60f3-23c4-413e-b96c-c2c600b987e7",
+      "environmentName": "production",
+      "service": "fac20a26-e4db-4b62-a68d-8636dbff2827"
     }
   },
   "user": {
