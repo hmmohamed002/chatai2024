@@ -1,8 +1,0 @@
-mutation ServiceDomainCreate($environmentId: String!, $serviceId: String!) {
-  serviceDomainCreate(
-    input: { environmentId: $environmentId, serviceId: $serviceId }
-  ) {
-    id
-    domain
-  }
-}
