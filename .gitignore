@@ -162,3 +162,15 @@ cython_debug/
 #.idea/
 # Ignore npm cache
 .npm/
+# تجاهل مجلد env
+env/
+
+# تجاهل ملف السجلات
+bot_log.txt
+
+# تجاهل الملفات المضغوطة
+*.tar.gz
+
+# تجاهل ملفات النظام
+*.log
+*.tmp
