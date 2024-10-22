@@ -1,0 +1,33 @@
+name: CI
+on:
+  push:
+  workflow_dispatch:
+
+jobs:
+
+  test:
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ ubuntu-latest-m, macos-latest-xl, windows-latest-l ]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-go@v5
+        with:
+          go-version-file: "go.mod"
+          check-latest: true
+      - name: Get go version
+        id: go-version
+        run: echo "name=version::$(go env GOVERSION)" >> $GITHUB_OUTPUT
+      - name: go mod download
+        run: go mod download
+      - name: go mod verify
+        run: go mod verify
+      - name: generate command strings
+        run: go generate ./... && git diff --exit-code
+        if: runner.os != 'Windows'
+      - name: "Place wintun.dll"
+        run: cp deps/wintun/bin/amd64/wintun.dll ./
+      - name: Run tests
+        run: make test

@@ -1,0 +1,48 @@
+app = "foo"
+primary_region = "mia"
+kill_signal = "SIGTERM"
+kill_timeout = "10s"
+swap_size_mb = 512
+
+[deploy]
+  release_command = "migrate-db"
+
+[[restart]]
+  policy = "always"
+
+[env]
+  FOO = "BAR"
+
+[metrics]
+  port = 9999
+  path = "/metrics"
+
+[http_service]
+  internal_port = 8080
+  force_https = true
+
+  [[http_service.machine_checks]]
+   command = ["curl", "https://fly.io"]
+   image = "curlimages/curl"
+   entrypoint = ["/bin/sh"]
+
+[checks.listening]
+  port = 8080
+  type = "tcp"
+
+[checks.status]
+  port = 8080
+  type = "http"
+  interval = "10s"
+  timeout = "1s"
+  path = "/status"
+
+[mounts]
+  source = "data"
+  destination = "/data"
+
+[[statics]]
+guest_path = "/guest/path"
+url_prefix = "/url/prefix"
+tigris_bucket = "example-bucket"
+index_document = "index.html"

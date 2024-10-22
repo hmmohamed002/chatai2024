@@ -60,3 +60,96 @@ git push origin maincat requirements.txt
 cat requirements.txt
 git status
 git push origin main
+rm -rf chatai2024
+rm -r .cache
+rm -r .cargo
+rm -r .config/termux
+rm -r .local/share/heroku
+rm -r .npm
+rm -r .rustup
+rm -r .ssh
+rm .gitconfig
+rm .lesshst
+rm .netrc
+rm .npmrc
+rm .profile
+mv env .env
+git rm -r .cache
+git rm -r .cargo
+git rm -r .config/termux
+git rm -r .local/share/heroku
+git rm -r .npm
+git rm -r .rustup
+git rm -r .ssh
+git rm .gitconfig
+git rm .lesshst
+git rm .netrc
+git rm .npmrc
+git rm .profile
+git commit -m "Remove unnecessary files and folders"
+git push origin main
+git config --global user.name "اسمك"
+git config --global user.name "hmmohamed002"
+git config --global user.email "mohamedalkhateb002"
+git commit -m "Remove unnecessary files and folders"
+git push origin main
+git push origin master
+.cache/
+.cargo/
+.config/
+.local/
+.npm/
+.rustup/
+.ssh/
+.gitconfig
+.lesshst
+.netrc
+.npmrc
+.profile
+git rm -r --cached .cache .cargo .config .local .npm .rustup .ssh .gitconfig .lesshst .netrc .npmrc .profile
+git commit -m "Remove unnecessary files and update .gitignore"
+git status
+.cache/
+.cargo/
+.config/
+.local/
+.npm/
+.rustup/
+.ssh/
+.gitconfig
+.lesshst
+.netrc
+.npmrc
+.profile
+git rm -r --cached .cache .cargo .config .local .npm .rustup .ssh .gitconfig .lesshst .netrc .npmrc .profile
+git commit -m "Remove unnecessary files and update .gitignore"
+git push origin master
+git rm -r --cached <file_or_directory>
+git rm -r --cached .cache .cargo .config .local .npm .rustup .ssh .gitconfig .lesshst .netrc .npmrc .profile
+ls -la
+git rm -r .cache .cargo .config .local .npm .rustup .ssh .lesshst .netrc .npmrc
+git commit -m "Remove unnecessary files from the repository"
+git push origin master
+git status
+rm -rf .cache .cargo .config .local .npm .rustup .ssh .lesshst .netrc .npmrc
+git add -u
+git commit -m "Remove unnecessary files from the repository"
+git push origin master
+python3 my_new_bot.py
+pwd
+ls -la
+git rm my_new_bot.py
+git commit -m "Remove my_new_bot.py from the repository"
+git status
+rm my_new_bot.py
+ls -la
+git ls-files | grep my_new_bot.py
+git branch
+rm /data/data/com.termux/files/home/my_new_bot.py
+pwd
+ls -la | grep my_new_bot.py
+ls -l my_new_bot.py
+rm -f my_new_bot.py
+find /data/data/com.termux/files/home -name "my_new_bot.py"
+git status
+git log -- my_new_bot.py
